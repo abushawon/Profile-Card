@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+
+.container{
+    background: linear-gradient(140deg, rgb(94, 92, 95), rgb(12, 12, 12)), url(images/watercolour-flowers-5188030_1280.png);
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.heading h1{
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 5em;
+    font-weight: 600;
+    color:white;
+    margin: 30px;
+    text-shadow: 2px 2px 7px rgb(125, 153, 185), 2px 2px 7px rgb(47, 183, 218) ;    
+}
+
+.heading hr{
+    display: block;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: -20px;
+    border: none;
+    background-color: aquamarine;
+    height: 8px;
+    background: linear-gradient(to right, rgb(65, 121, 101), rgb(70, 175, 140));
+    transition: transform 0.3s ease-in-out;
+}
+
+.heading hr:hover{
+    transform: scaleX(1.08);
+}
+
+.Profile-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 150px;
+    flex-wrap: wrap;
+}
+
+.inner-card1{
+    width: 350px;
+    height:500px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+    display: grid;
+    grid-template-rows: repeat(7,auto);
+}
+
+.div1img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.profileimg{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    bottom: 110%;
+    margin-bottom: -20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profileimg:hover{
+    transform: scale(1.08);
+    border-radius: 0%;
+    cursor: pointer;
+    
+}
+
+.inner-card1 h2{
+    position: relative;
+    top: -5px;
+    text-align: center;
+    font-family: 'Nunito';
+    
+}
+
+.inner-card1 address{
+    position: relative;
+    top: -28px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Monteserrat';
+}
+
+.mail{
+    position: relative;
+    top: -48px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    transition: transform 0.3s ease-in-out;
+}
+
+.mail:hover{
+    transform: scaleX(1.07);
+    text-shadow: 0 0 5px #8A6CE0;
+}
+
+.mail:active {
+    transform: scale(0.9);
+    color: rgb(165, 161, 161);
+  }
+
+
+.inner-card1 p{
+    position: relative;
+    top: -50px;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Merriweather';
+    
+}
+
+
+.inner-card1{
+    transition: transform 0.3s ease-in-out;
+    /* position: absolute;
+    z-index: 1; */
+}
+
+
+.inner-card1:hover{
+    transform: scale(1.02);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.btn{
+    border-radius: 30px;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(to right, rgb(57, 202, 202), rgb(30, 105, 107));
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(21, 102, 102), aqua);
+    transition: 0.7s;
+    z-index: -1;
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+
+.btn:hover{
+    color: black;
+    transform: scaleX(1.08);
+}
+
+.btn:active {
+    transform: scale(0.9);
+  }
+
+.inner-card2{
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    
+}
+
+.background{
+    background: linear-gradient(120deg, rgb(91, 99, 98),rgb(57, 83, 80));
+    background-color: rgb(128, 119, 116);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: -20px;
+    
+}
+
+.background h2{
+    padding: 40px;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+.background hr{
+    display: block;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -20px;
+    border: none;
+    background-color: aquamarine;
+    height: 8px;
+    /* width: 25%; */
+    background: linear-gradient(to right, rgb(65, 121, 101), rgb(70, 175, 140));
+    transition: transform 0.3s ease-in-out;
+}
+
+hr:hover{
+    transform: scaleX(1.15);
+}
+
+
+.inner-card2{
+    transition: transform 0.3s ease-in-out;
+    /* position: absolute;
+    z-index: 1; */
+    overflow: hidden;
+    height: 500px;
+    width: 350px;
+}
+
+
+.inner-card2:hover{
+    transform: scale(1.02);
+}
+
+.edu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.edu strong{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 14px;
+}
+
+.edu p{
+    font-family: 'Montserrat';
+    text-align: left;
+    font-size: 13px;
+}
+
+.journey{
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: #8A6CE0;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 50px;
+    /* text-align: center; */
+    background: linear-gradient(to right, rgb(49, 145, 124), rgb(40, 82, 73));
+}
+
+.journey p{
+    color: aliceblue;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    text-align: center;
+}
